@@ -1,0 +1,34 @@
+Circuit Checker
+===============
+
+Problem Definition
+------------------
+You will be provided with a Grid object read in from a document. You will have to use the data in the grid to answer these questions.
+
+Lines may not all be of the same length, it is assumed that tiles after the line end are all blank.
+The edges of the grid are hard edges, they do not wrap around like a cylinder or torus.
+For tiles to be considered connected, they must must both have connections to each other. 
+For example if Tile 1 is to the left of Tile 2, then Tile 1 must have a connection right and Tile 2 must have a connection left to be considered connected. 
+If either of those directions is missing, then the tiles are not considered connected.
+
+EX:
+These tiles connect:
+ ╠═
+Printed as:
+[G  ↑↓→][G ←  →]
+These tiles do not connect:
+╣═
+Printed as:
+[G ←↑↓ ][G ←  →]
+
+
+Questions
+---------
+1. Determine if all sinks can be connected to a source.
+    a) For each sink that cannot be connected, output a message with the (0 indexed) coordinates of the sink that can’t be connected.
+2. Determine if all sources can be connected to a sink.
+    a) For each source that cannot be connected, output a message with the (0 indexed) coordinates of the source that can’t be connected.
+
+Notes
+-----
+Please do not submit hidden files (.idea, .DS_Store, Thumbs.db, etc) with your solution.
